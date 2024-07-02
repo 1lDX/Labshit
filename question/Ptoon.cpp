@@ -6,7 +6,7 @@ int round,money,i,j;
 cin>>round>>money;
 
 for(i=1;i<round+1;i++){
-    cout<<i<<"-20"<<endl;
+    cout<<i<<"-"<<money<<endl;
 
 }
 

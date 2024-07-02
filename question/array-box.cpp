@@ -11,10 +11,6 @@ int main() {
     for(i=0;i<10;i++){
         cin>>arr[i];
         cout<<arr[i]<<endl;
-
-
-
-
     }
 
 
