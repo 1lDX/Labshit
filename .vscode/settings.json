@@ -5,6 +5,7 @@
         "ostream": "cpp",
         "tuple": "cpp",
         "iostream": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "valarray": "cpp"
     }
 }
