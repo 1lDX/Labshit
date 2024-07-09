@@ -1,0 +1,5 @@
+a,b = input().split(" ")
+a = float(a)
+b = float(b)
+c = ((a**2+b**2)**0.5)
+print("{:.6f}".format(c))
