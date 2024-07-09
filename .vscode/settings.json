@@ -6,6 +6,7 @@
         "tuple": "cpp",
         "iostream": "cpp",
         "system_error": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "random": "cpp"
     }
 }
