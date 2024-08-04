@@ -1,18 +1,9 @@
-minutes = int(input("Minutes before due: "))
-temperature = float(input("Temperature: "))
-raining = input("Is it raining (y/n)? ").upper
+number = 100  # ตัวเลขที่ต้องการหาร
+divisor = 2   # ตัวหาร
+count = 0     # ตัวแปรนับจำนวนครั้ง
 
-total = round(minutes/1440)
-if total == 0 :
-    total = 1
-print(f">>> {total} days before due.")
-if total > 5:
-    print(">>> I will not do the assignment.") 
-elif total < 2  :
-    print(">>> I will do the assignment.")
-else:    
-    if temperature > 40 or (temperature > 25 and raining == 'Y'):
-        print(">>> I will not do the assignment.")
-    else:
-        print(">>> I will do the assignment.")
-    
+while number % divisor == 0:
+    number = number // divisor
+    count += 1
+
+print("จำนวนครั้งที่หารได้:", count)
