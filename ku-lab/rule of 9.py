@@ -1,7 +1,12 @@
-#818181
 n = int(input())
 count = 0
-x = 0
+i = 0
 while True:
-    x = n/9
-    print(x)
+    i += n%10
+    n = n//10
+    if n == 0:
+        break
+if i % 9 == 0:
+    print(f'Yes {i}')
+elif i % 9 >=1:
+    print(f'No {i%9}')

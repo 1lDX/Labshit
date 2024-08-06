@@ -1,9 +1,12 @@
-number = 100  # ตัวเลขที่ต้องการหาร
-divisor = 2   # ตัวหาร
-count = 0     # ตัวแปรนับจำนวนครั้ง
+n = int(input())
+count = 0
 
-while number % divisor == 0:
-    number = number // divisor
+while True:
+    if n == 0 and count != 0: 
+        break
+    if n <= 0 and count == 0:
+        print("ERROR")
+        break
+    print(n % 10)
+    n = n // 10
     count += 1
-
-print("จำนวนครั้งที่หารได้:", count)
