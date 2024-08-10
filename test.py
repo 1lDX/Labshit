@@ -1,12 +1,11 @@
-n = int(input())
-count = 0
-
+c = 0
+last_height = 0
 while True:
-    if n == 0 and count != 0: 
+    height = int(input())
+    if height == -1:
         break
-    if n <= 0 and count == 0:
-        print("ERROR")
-        break
-    print(n % 10)
-    n = n // 10
-    count += 1
+    if height > last_height:
+        c += 1
+        last_height = height
+
+print(c)
