@@ -8,7 +8,7 @@ while frame < 10:
     while r < 2:
         if test == 0:
             print(f"Frame # {frame}")
-            down = int(input(f"   Number of pins down: "))
+            down = int(input(f"  Number of pins down: "))
             left = pins - down
             score += down
             test += 1
@@ -16,7 +16,7 @@ while frame < 10:
                 break
         else:
             print(f"Frame # {frame}")
-            down = int(input(f"   Number of pins down (0-{left}): "))
+            down = int(input(f"  Number of pins down (0-{left}): "))
             score += down
             test += 1
             break
