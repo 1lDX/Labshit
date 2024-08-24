@@ -1,3 +1,2 @@
-a = 26 // 5
-
-print(a)
+print(ord("A"))
+print(chr(65))

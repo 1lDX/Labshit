@@ -1,5 +1,12 @@
-i = 100
-while i >= 50 :
-    if i % 2 >= 1:
-      print(i)
-    i = i-1
+a = int(input())
+b = int(input())
+c = int(input())
+
+a = a**2
+b = b**2
+c = c**2
+
+if c == a+b:
+    print("True")
+elif c!= a+b:
+    print("False")
