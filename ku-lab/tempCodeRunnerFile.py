@@ -1,24 +1,18 @@
-frame = 0
-score = 0
-while frame < 10:
-    pins = 10
-    frame += 1
-    r = 0
-    test = 0
-    while r < 2:
-        if test == 0:
-            print(f"Frame # {frame}")
-            down = int(input(f"   Number of pins down: "))
-            left = pins - down
-            score += down
-            test += 1
-            if down == 10:  
-                break
-        else:
-            print(f"Frame # {frame}")
-            down = int(input(f"   Number of pins down (0-{left}): "))
-            score += down
-            test += 1
-            break
-        r += 1
-print(f"Total score is {score}")
+n = int(input("Enter a number: "))
+i = 0
+c = 0
+
+
+if n <=0 :
+    print("Invalid input, program terminates.")
+else:
+    while n>i:
+        c = 0
+        while c<=i-1:
+            print(chr(ord("A")+c),end = "")
+            c += 1
+        print()
+        i+=1   
+
+    i = 0
+    c = 0

@@ -8,11 +8,9 @@ if n <=0 :
 else:
     while i<n:
         c = 0
-        while c<=i:
+        while c<n-i:
             print(chr(ord("A")+c),end = "")
             c += 1
+            
         print()
-        i+=1   
-
-    i = 0
-    c = 0
+        i+=1

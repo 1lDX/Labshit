@@ -13,11 +13,16 @@ c = 0
 if n < 0:
     print ("Invalid input, program terminates.")
 else :
-    while i<=n :  
-        print(f"{i}! = ", end="")
-        print(f"{i} x "*i)
+        
+        
+        while i<=n :  
+            while c<i :
+                print(f"{i}! = ", end="")
+                print(f"{i} x "*i,end="")
+                
+                print(" test ")
 
-        c+=1
-        i+=1
-    while i<=n :
-        break
+                c+=1
+            i+=1
+        while i<=n :
+            break
