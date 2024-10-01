@@ -1,18 +1,22 @@
-n = int(input("Enter a number: "))
-i = 0
-c = 0
+def normal(n:str):
+    return int(n)+1
 
+def float(n:str):
+    if n.count(".") > 1:
+        return "ERROR"
+    elif n.count(".") == 1:
+        print(float(n)+1)
+        return True
+def comma(n):
+    
+    return
+def fcom(n):
+    return
 
-if n <=0 :
-    print("Invalid input, program terminates.")
-else:
-    while n>i:
-        c = 0
-        while c<=i-1:
-            print(chr(ord("A")+c),end = "")
-            c += 1
-        print()
-        i+=1   
+n = str(input())
+result = "ERROR"
 
-    i = 0
-    c = 0
+if n not in (",."):
+    result = normal(n)
+print (result)
+

@@ -2,6 +2,8 @@ count = 0
 i=0
 while True:
     n = int(input("Enter a number: "))
+    count = 0
+    i = 0
     while i<=n :
         i=i+1
         if n%i == 0:
@@ -17,3 +19,4 @@ while True:
     elif count != 2:
         print(f"{n} is not a prime number.")
 
+    
